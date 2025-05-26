@@ -1,0 +1,158 @@
+/*
+-----Colar no header do html-----
+<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+
+.tourney-<uniquifier> {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.tilt-neon-<uniquifier> {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Tilt Neon", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url(img/4k-programming-blue-code-numbers-nhtyi2q5iuostasr.png);
+    color: #1974d4;
+    text-align: center;
+    padding: 2rem;
+    background-position: bottom;
+    background-size: cover;
+    
+}
+.img{
+    
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1{
+    text-shadow: 0px 0px 0px white;
+}
+
+h2{
+    color: #1974d4;
+}
+
+p{
+    color: white;
+}
+
+.expandir {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, max-height 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+    max-height: 100px;
+    border-style: double;
+    border-color: #1974d4;
+}
+
+.expandir:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px white (0, 0, 0, 0.2);
+}
+
+.expandido {
+    max-height: 500px;
+}
+
+p{
+    line-height: 25px ;
+}
+ul{
+    margin-left: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #1974d4;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: black;
+}
+
+button {
+    padding: 0.8rem;
+    background-color: #1974d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #115cad;
+}
+
+.expandir p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expandir.expandido p {
+    opacity: 1;
+}

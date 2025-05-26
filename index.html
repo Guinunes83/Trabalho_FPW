@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Perfil Pessoal</title>
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <img src="/img/IMG_20250423_073750.jpg" alt="Sua Foto">
+            <h1>Guilherme Nunes</h1>
+            <p>Estudante de Analise e Desenvolvimento de Sistema</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-mim" class="expandir" onclick="expandir(this)">
+            <h2>Sobre Mim</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenho <strong>41 anos</strong>, sou casado a 3 anos e meu esposo se
+                chama <strong>William Karoleski</strong>, somos pais de 3 lindos gatos <strong> (Suzzy, Maggie e
+                    Evaristo)</strong>, moro na cidade de <strong> Palhoça / SC</strong>, trabalho atualmente numa
+                clinica de Pesquisa Oncologica no setor Administrativo e estudo Análise e Desenvolvimento de Sistemas na
+                <strong> UNINTER </strong>. </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comecei a estudar Programação no inicio de 2024 e venho me dedicando
+                a essa área o máximo que posso para logo estar podendo me colocar no mercado de trabalho.
+            </p>
+        </section>
+
+        <section id="carreira" class="expandir" onclick="expandir(this)">
+            <h2>Meus Projetos</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Como estou no inicio do curso e desta área, não possuo projetos em
+                andamento, algumas ideia para desenvolver: </br>
+            <ul>
+                <li> Site de busca de pets perdidos e para adoção.</li>
+                <li> Programa de gerenciamento de atividades e informações voltado para a necessidade regulatórias da
+                    Pesquisa Clínica.</li>
+            </ul>
+            </p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="/Script.js"></script>
+</body>
+
+</html>
